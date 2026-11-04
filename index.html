@@ -29,11 +29,11 @@
 <body>
 <main>
 <h1>NekoAI privacy policy</h1>
-<p class="meta">NekoAI is a cat companion app by Day Dream Corp. Last updated: 3 November 2026.</p>
+<p class="meta">NekoAI is a cat companion app by Day Dream Corp. Last updated: 4 November 2026.</p>
 
 <section>
 <h2>The short version</h2>
-<p>NekoAI has no account and no server of its own. Almost everything stays on your phone. When you use the AI features, what you say to the cat is sent to Anthropic, the AI provider, using your own API key. Nothing is sold, used for advertising, or shared with anyone else.</p>
+<p>NekoAI has no account. Almost everything stays on your phone. When you use the AI features, what you say to the cat is sent to Anthropic, the AI provider. While NekoAI is being tested, it also tells Day Dream Corp which features you use and how often, and what crashed, but never what you or the cat write or say; you can turn that off in Settings. Nothing is sold, used for advertising, or shared with anyone else.</p>
 </section>
 
 <section>
@@ -41,7 +41,7 @@
 <ul>
 <li>Your conversation with the cat, the memories you let her keep, and the little notes she makes about what you like in small talk.</li>
 <li>Her hunger, thirst, bond and habits (what you like doing with her), her personality, and your settings.</li>
-<li>Your Anthropic API key, encrypted with Android's Keystore.</li>
+<li>Your Anthropic API key, if you use your own, encrypted with Android's Keystore.</li>
 <li>A record of your AI usage, used to keep the usage limits. Copies of NekoAI installed outside Google Play also keep a tiny usage-limit file in Documents/NekoAI so a reinstall doesn't reset the limits; the Google Play version doesn't.</li>
 </ul>
 <p>None of this is sent to Day Dream Corp.</p>
@@ -50,7 +50,8 @@
 <section>
 <h2>What leaves your phone, and why</h2>
 <ul>
-<li><strong>To Anthropic</strong>, only when you use the AI chat or small talk: what you write or say to the cat, pictures you choose to show her, and the context she needs to answer (her personality, the time and season, your usage percentages, and the notes and memories above). This is sent with your own API key and handled under <a href="https://www.anthropic.com/legal/privacy">Anthropic's privacy policy</a>.</li>
+<li><strong>To Anthropic</strong>, only when you use the AI chat or small talk: what you write or say to the cat, pictures you choose to show her, and the context she needs to answer (her personality, the time and season, your usage percentages, and the notes and memories above). This is handled under <a href="https://www.anthropic.com/legal/privacy">Anthropic's privacy policy</a>. Copies installed outside Google Play send it with your own API key. The Google Play version sends it through Neko Gate, Day Dream Corp's own relay, which holds the API key: Neko Gate checks with Google Play that the app is genuine, passes your messages on to Anthropic, and keeps only what it needs to run your plan (a random id for this install, your plan and its Google Play purchase, and how much of your usage limits you have used), never the words.</li>
+<li><strong>To Day Dream Corp, while NekoAI is being tested</strong>: anonymous usage statistics and crash reports, described below, unless you turn them off.</li>
 <li><strong>To Open-Meteo</strong>, only if you turn on Real weather: your approximate location, rounded to about 10 km, to get the current weather. See <a href="https://open-meteo.com/en/terms">Open-Meteo's terms</a>.</li>
 <li><strong>Voice input</strong> is turned into text by your phone's own speech recognizer. NekoAI never records or sends audio itself.</li>
 </ul>
@@ -58,8 +59,34 @@
 </section>
 
 <section>
+<h2>Usage statistics while NekoAI is being tested</h2>
+<p>Copies of NekoAI given to testers (the Google Play test track) can send Day Dream Corp's own server short reports of what the app is used for, so we can see which parts are loved and which ones break. The switch is <strong>Settings, Share anonymous usage with the developer</strong>. It starts on, but nothing is sent until you have said OK to the notice that explains it the first time you open the app.</p>
+<p><strong>What is sent</strong> is a list of things that happened, each a name from a fixed list and a few fixed words or numbers, never free text:</p>
+<ul>
+<li>Opening the app (from the launcher, a notification, the share sheet, a tile, the widget or the cat), letting her out onto the screen and putting her away.</li>
+<li>Tapping her, opening her action bubbles, and what you gave or did (which food, drink or treat, which kind of petting, toy, care or trick) with how she took it.</li>
+<li>Small talk lines, and whether she answered with one of her own lines or with the AI.</li>
+<li>Chat messages: only that one was sent, how (typed, by voice, shared from another app, or from a mini-app), its length as a rough size (up to 20, 80, 300 or 1,000 characters, or more), whether it was one of her little free commands, and the reasoning setting. <strong>Never the message itself, and never her answer.</strong></li>
+<li>Mini-apps made and opened (the name of the ready-made template, or "custom"), stamps earned, outfits worn, festivals shown, Kid Mode being turned on and off, and her antics you saw (a belly slam, a climb, clinging to the screen, tearing it).</li>
+<li>The plan menu being opened, the plan you subscribed to (its name only, never a price, an order number or a purchase token), and the "new version" dialog.</li>
+<li>Timings: how long her answers take, how long she takes to appear on the screen, and how long you spend on each of the app's screens.</li>
+<li>Errors: the kind of error (for example "no network"), and for a crash, the type of error and the places in NekoAI's code where it happened (class and file names, line numbers). Never the error's message, which could quote something you typed.</li>
+</ul>
+<p>Each report comes with a <strong>random id</strong> made on your phone the first time NekoAI runs (it isn't your name, an account, your phone number, the Android ID, an advertising id or a hardware serial number, and reinstalling the app makes a new one; on the Google Play version it is the same id Neko Gate knows this install by), your phone's model, Android version, the app's version and language, and your plan. Day Dream Corp's server doesn't keep your IP address.</p>
+<p><strong>Not sent, ever:</strong> what you or the cat write or say, your contacts, accounts, email, location, the names of other apps, or anything at all while Kid Mode is on (apart from the note that Kid Mode was turned on, and later off, so our server stops counting).</p>
+<p><strong>Only if you choose to</strong>, as a tester:</p>
+<ul>
+<li>a <strong>tester name</strong> you pick, shown on the testers' leaderboard in the NekoAI Discord server;</li>
+<li><strong>linking</strong> this install to your Discord account, by typing a one-time code from the app in the NekoAI Discord;</li>
+<li><strong>sharing a picture of your cat</strong> in the #your-cat channel of the NekoAI Discord: a drawing the app makes of her (never a screenshot), her name and a short note you write. They are posted publicly, signed with your tester name, and deleted after 7 days.</li>
+</ul>
+<p><strong>How long it is kept:</strong> the reports, 90 days; crash reports, 30 days; the daily counts the leaderboard reads, your tester name and your Discord link, until the install is erased; shared pictures, their names and notes, 7 days.</p>
+<p><strong>Your choices:</strong> turn the switch off at any time: nothing more is sent, and anything waiting to be sent is deleted from your phone. To have everything about your install erased from our server, write to us with your tester name or your Discord name.</p>
+</section>
+
+<section>
 <h2>Children and Kid Mode</h2>
-<p>NekoAI is for teens and adults. Kid Mode is a tool for parents, set up on their own phone: it shows only the cat, her action bubbles and gentle cat small talk, with no chat, no settings and no links, and it can only be turned off with the parent's fingerprint or face. The notes the cat makes in Kid Mode never keep names, addresses, schools, phone numbers or other identifying details, are kept apart from the adult's, and can be read and deleted by the parent in Neko Nikki. If AI small talk is used in Kid Mode, what the child says is sent to Anthropic as described above.</p>
+<p>NekoAI is for teens and adults. Kid Mode is a tool for parents, set up on their own phone: it shows only the cat, her action bubbles and gentle cat small talk, with no chat, no settings and no links, and it can only be turned off with the parent's fingerprint or face. The notes the cat makes in Kid Mode never keep names, addresses, schools, phone numbers or other identifying details, are kept apart from the adult's, and can be read and deleted by the parent in Neko Nikki. If AI small talk is used in Kid Mode, what the child says is sent to Anthropic as described above. No usage statistics, tester name, Discord link, shared picture or crash report is sent while Kid Mode is on.</p>
 </section>
 
 <section>
@@ -76,7 +103,7 @@
 
 <section>
 <h2>Your choices</h2>
-<p>You can forget any memory or note in Neko Nikki, turn memory and Real weather off in Settings, remove your API key, or delete everything by clearing the app's storage or uninstalling it.</p>
+<p>You can forget any memory or note in Neko Nikki, turn memory, Real weather and the sharing of anonymous usage off in Settings, remove your API key, or delete everything on your phone by clearing the app's storage or uninstalling it. To have what our server received about your install erased, write to us.</p>
 </section>
 
 <section>
